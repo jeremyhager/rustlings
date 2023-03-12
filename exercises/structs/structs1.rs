@@ -5,7 +5,9 @@
 // I AM NOT DONE
 
 struct ColorClassicStruct {
-    // TODO: Something goes here
+    red: u8,
+    green: u8,
+    blue: u8
 }
 
 struct ColorTupleStruct(/* TODO: Something goes here */);
