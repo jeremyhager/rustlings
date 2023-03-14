@@ -27,13 +27,10 @@ impl Package {
     }
 
     fn is_international(&self) -> bool {
-        match self{
-           self.recipient_country => {
-               false
-           }
-           _ => {
-                true
-           }
+        if self.sender_country == self.recipient_country {
+            false
+        } else {
+            true
         }
     }
 
